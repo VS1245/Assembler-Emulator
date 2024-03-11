@@ -1,0 +1,11 @@
+0x00000000 0x00000600 ldc 6
+0x00000001 0x00000400 ldc 4    ; A=4 B=6
+0x00000002 0x00000003 stl 0    ; M[0]= A = 4 , A =B=6
+0x00000003 0xffffff01 adc -1
+0x00000004 0x0000050f brz end  ; if A==0 end
+0x00000005 0xffffff01 adc -1
+0x00000006 0x00000002 ldl 0    ; B= iterator =A=6 A= M[0]
+0x00000007 0x00000401 adc 4
+0x00000008 0x00000003 stl 0    ;M[0]= A, A= B=iterator
+0x00000009 0xfffffa11 br loop
+0x0000000a 0x00000002 ldl 0
