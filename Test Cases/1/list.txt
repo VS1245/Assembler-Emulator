@@ -1,0 +1,7 @@
+0x00000000 0x00000000 	ldc 0
+0x00000001 0xfffffb00 	ldc -5
+0x00000002 0x00000500 	ldc +5
+0x00000003 0xffffff11 loop: br loop ; an infinite loop
+0x00000004 0x00000011 br next	;offset should be zero 
+0x00000005 0x00000300     	ldc loop ; load code address
+0x00000006 0x00000400 	ldc var1 ; forward ref
