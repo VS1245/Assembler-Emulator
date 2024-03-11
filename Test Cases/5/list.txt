@@ -1,0 +1,6 @@
+0x00000000 0x00000100 ldc 1 ;stored 1 in A
+0x00000001 0x00000201 adc 2 ; added 2 in A
+0x00000002 0x00000301 adc 3 ; added 3 in A
+0x00000003 0x00000401 adc 4 ; added 4 in A
+0x00000004 0x00000501 adc 5 ; added 5 in A
+0x00000005 0x00000003 stl 0 ; stored A at SP
