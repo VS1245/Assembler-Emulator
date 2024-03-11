@@ -7,7 +7,7 @@ Machine Code Generation and Execution (small set of instructions)
 - **Course:** CS209-CS210 Computer Architecture
 
 ## Declaration of Authorship
-This txt file, `claims.txt`, is part of the assignment of CS209-CS210 at the department of Computer Science and Engineering, IIT Patna.
+The txt file, `claims.txt`, is part of the assignment of CS209-CS210 at the department of Computer Science and Engineering, IIT Patna.
 
 ## Program Structure
 The paths of the files used in the code are hardcoded.
