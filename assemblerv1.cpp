@@ -118,11 +118,11 @@ string bintohex(string bin)
 int main()
 {
     //opening asm code file
-   string asm_file_path = "C:\\Users\\Dell\\Desktop\\Architechture\\project\\test_cases\\4\\test.asm";
+   string asm_file_path = "test_cases\\4\\test.asm";
    ifstream asm_file(asm_file_path);
-   ofstream log_file("C:\\Users\\Dell\\Desktop\\Architechture\\project\\test_cases\\4\\log.txt");
-   ofstream asm_code("C:\\Users\\Dell\\Desktop\\Architechture\\project\\test_cases\\4\\asm.txt");
-   ofstream list_file("C:\\Users\\Dell\\Desktop\\Architechture\\project\\test_cases\\4\\list.txt");
+   ofstream log_file("test_cases\\4\\log.txt");
+   ofstream asm_code("test_cases\\4\\asm.txt");
+   ofstream list_file("test_cases\\4\\list.txt");
    //check if file as opened
    if(!asm_file.is_open())
    {
