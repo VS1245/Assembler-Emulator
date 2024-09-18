@@ -128,12 +128,12 @@ int main()
     cout<<"Which test case do you want to test?";
     cin>>t;
     //opening asm code file
-   string asm_file_path = "C:\\Users\\Dell\\Desktop\\Architechture\\project\\test_cases\\"+t+"\\test.asm";
+   string asm_file_path = "test_cases\\"+t+"\\test.asm";
    ifstream asm_file(asm_file_path);
-   ofstream log_file("C:\\Users\\Dell\\Desktop\\Architechture\\project\\test_cases\\"+t+"\\log.txt");
-   ofstream asm_code("C:\\Users\\Dell\\Desktop\\Architechture\\project\\test_cases\\"+t+"\\asm.txt");
-   ofstream list_file("C:\\Users\\Dell\\Desktop\\Architechture\\project\\test_cases\\"+t+"\\list.txt");
-   ofstream memory_block("C:\\Users\\Dell\\Desktop\\Architechture\\project\\test_cases\\"+t+"\\mem.txt");
+   ofstream log_file("test_cases\\"+t+"\\log.txt");
+   ofstream asm_code("test_cases\\"+t+"\\asm.txt");
+   ofstream list_file("test_cases\\"+t+"\\list.txt");
+   ofstream memory_block("test_cases\\"+t+"\\mem.txt");
    //check if file as opened
    if(!asm_file.is_open())
    {
