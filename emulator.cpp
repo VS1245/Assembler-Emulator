@@ -4,7 +4,7 @@ vector<int> Memory(4096,0);
 int Reg_A=0, Reg_B=0, SP= 0, PC=0;
 
 void mem_read(string t){
-    ifstream memory_block("C:\\Users\\Dell\\Desktop\\Architechture\\project\\test_cases\\"+t+"\\mem.txt");
+    ifstream memory_block("test_cases\\"+t+"\\mem.txt");
 
     // Read each line from the file
     string line;
@@ -22,7 +22,7 @@ void mem_read(string t){
 
 void mem_write(string t)
 {
-    ofstream memory_block("C:\\Users\\Dell\\Desktop\\Architechture\\project\\test_cases\\"+t+"\\mem.txt");
+    ofstream memory_block("test_cases\\"+t+"\\mem.txt");
     for (auto i : Memory) {
             memory_block << i << endl;
         }
@@ -57,8 +57,8 @@ int main()
     string t;
     cout<<"Which test case do you want to test?";
     cin>>t;
-    ifstream asm_code("C:\\Users\\Dell\\Desktop\\Architechture\\project\\test_cases\\"+t+"\\asm.txt");
-    ofstream emu_output("C:\\Users\\Dell\\Desktop\\Architechture\\project\\test_cases\\"+t+"\\emu_o.txt");
+    ifstream asm_code("test_cases\\"+t+"\\asm.txt");
+    ofstream emu_output("test_cases\\"+t+"\\emu_o.txt");
     string line, token, inst;
     int opcode, operand,size=0;
     vector<string>inst_reg;
